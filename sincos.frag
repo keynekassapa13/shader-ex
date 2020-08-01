@@ -22,7 +22,7 @@ void main() {
     uv += translate * 0.5;
      
     float circle = circleshape(uv, 0.2);
-    color += vec3(circle);
+    color = vec3(circle);
 
     gl_FragColor = vec4(color, 1.0);
 }
